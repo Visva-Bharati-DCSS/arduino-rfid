@@ -15,9 +15,7 @@
 - Repeat.
 
 ### Circuit
-<div style="background: #2b2b2b;border-radius: 0.2em;padding: 2em;">
-    <img src="basic_tinkering.svg" width=500 alignment=center>
-</div>
+<img src="basic_tinkering.svg" width=600>
 
 ### Code
 ```
