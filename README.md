@@ -24,6 +24,7 @@
 
 ### Software
 1. Arduino IDE
+2. MFRC255 library
 
 ### Circuit diagram
 <img src="assets/rfid_reader_circuit_diagram.svg" height=400>
@@ -224,3 +225,5 @@ void loop() {
 ### Reference
 1. https://en.wikipedia.org/wiki/Radio-frequency_identification
 2. https://www.amazon.in/SunFounder-Mifare-Reader-Arduino-Raspberry/dp/B07KGBJ9VG
+3. https://docs.arduino.cc/resources/pinouts/A000066-full-pinout.pdf
+4. Arduino and MFRC522 built-in examples
