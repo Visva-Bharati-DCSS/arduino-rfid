@@ -206,12 +206,18 @@ void loop() {
 - RFID can be integrated with a microcontroller to handle identification.
 
 ### Project
-<img src="assets/20240219_143002.jpg" width=500 alt="setup">
-<br>Setup<br><br>
-<img src="assets/20240219_143149.gif" width=500 alt="authorized">
-<br>Authorized<br><br>
-<img src="assets/20240219_143135.gif" width=500 alt="not authorized">
-<br>Not authorized<br><br>
+<p>
+  <h4>Setup</h4>
+  <img src="assets/20240219_143002.jpg" width=500 alt="setup">
+</p>
+<p>
+  <h4>Authorized</h4>
+  <img src="assets/20240219_143149.gif" width=500 alt="authorized">
+</p>
+<p>
+  <h4>Not authorized</h4>
+  <img src="assets/20240219_143135.gif" width=500 alt="not authorized">
+</p>
 
 ## Acknowledgement
 
