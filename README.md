@@ -32,7 +32,7 @@
 ### Code
 
 *rfid.cpp*
-```
+```c++
 #pragma once
 
 #include <MFRC522.h>
@@ -102,12 +102,14 @@ public:
 ```
 
 *rfid_rc522.ino*
-```
+```c++
 #include <SPI.h>
 #include <MFRC522.h>
 #include <LiquidCrystal.h>
 
 #include "rfid.cpp"
+
+// #define NO_REPEAT_SCANS
 
 const int V0 = A5;
 const int RS = 7;
@@ -173,12 +175,14 @@ void loop() {
   }
   // same card
   LCD.clear();
-  // if (rfid == RFID(mfrc.uid)) {
-  //   LCD.print("Already scanned.");
-  //   serialLog("Already scanned.");
-  //   delay(500);
-  //   return;
-  // }
+#ifdef NO_REPEAT_SCANS
+  if (rfid == RFID(mfrc.uid)) {
+    LCD.print("Already scanned.");
+    serialLog("Already scanned.");
+    delay(500);
+    return;
+  }
+#endif
   // new card
   rfid.setUID(mfrc.uid);
   serialLog("Scanned RFID: " + rfid.toString());
